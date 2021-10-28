@@ -12,13 +12,14 @@ return [
     'truncate_tables' => true,
 
     'roles_structure' => [
-        'superadmin' => [
+        'super_admin' => [
+            'categories' => 'c,r,u,d',
+            'products' => 'c,r,u,d',
+            'clients' => 'c,r,u,d',
+            'orders' => 'c,r,u,d',
             'users' => 'c,r,u,d',
-            'payments' => 'c,r,u,d',
-            'profile' => 'r,u'
-
-    ],
-        'admin'=>[],
+        ],
+        'admin' => [],
     ],
 
     'permissions_map' => [

@@ -263,42 +263,43 @@
 {{--morris --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="{{ asset('dashboard_files/plugins/morris/morris.min.js') }}"></script>
-{{--<script>--}}
-{{--    $(document).ready(function () {--}}
+<script>
+    $(document).ready(function () {
 
-{{--        $('.sidebar-menu').tree();--}}
+        $('.sidebar-menu').tree();
 
-{{--        //icheck--}}
-{{--        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({--}}
-{{--            checkboxClass: 'icheckbox_minimal-blue',--}}
-{{--            radioClass: 'iradio_minimal-blue'--}}
-{{--        });--}}
+        //icheck
+        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioClass: 'iradio_minimal-blue'
+        });
 
-{{--        //delete--}}
-{{--        $('.delete').click(function (e) {--}}
+        //delete
+        $('.delete').click(function (e) {
 
-{{--            var that = $(this)--}}
+            var that = $(this)
 
-{{--            e.preventDefault();--}}
+            e.preventDefault();
 
-{{--            var n = new Noty({--}}
-{{--                text: "@lang('site.confirm_delete')",--}}
-{{--                type: "warning",--}}
-{{--                killer: true,--}}
-{{--                buttons: [--}}
-{{--                    Noty.button("@lang('site.yes')", 'btn btn-success mr-2', function () {--}}
-{{--                        that.closest('form').submit();--}}
-{{--                    }),--}}
+            var n = new Noty({
+                text: "@lang('site.confirm_delete')",
+                type: "warning",
+                killer: true,
+                buttons: [
+                    Noty.button("@lang('site.yes')", 'btn btn-success mr-2', function () {
+                        that.closest('form').submit();
+                    }),
 
-{{--                    Noty.button("@lang('site.no')", 'btn btn-primary mr-2', function () {--}}
-{{--                        n.close();--}}
-{{--                    })--}}
-{{--                ]--}}
-{{--            });--}}
+                    Noty.button("@lang('site.no')", 'btn btn-primary mr-2', function () {
+                        n.close();
+                    })
+                ]
+            });
 
-{{--            n.show();--}}
+            n.show();
 
-{{--        });//end of delete--}}
+        });
+    });//end of delete
 
 {{--        // // image preview--}}
 {{--        // $(".image").change(function () {--}}
@@ -319,7 +320,7 @@
 
 {{--    });//end of ready--}}
 
-{{--</script>--}}
+</script>
 
 </body>
 </html>
